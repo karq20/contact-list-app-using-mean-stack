@@ -6,18 +6,19 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-
+<script src="libs/jquery.min.js"></script>
 </head>
 
 <body ng-app="myApp">
    <div class="container" ng-controller="MainController">
 	<h1>Contact List App!</h1>
+	<div class="error" style="height:30px;color:red;font-weight:bold;padding:5px;"></div>
 	<table class="table">
 	  <thead>
-	    	<tr>
+	  	<tr>
 			<th>Name</th>
-			<th>Email</th>
 			<th>Number</th>
+			<th>Email</th>
 			<th>Birthday</th>
 			<th>Action</th>
 			<th>&nbsp;</th>
@@ -27,8 +28,8 @@
 
 		<tr>
 			<td><input class="form-control" ng-model="contact.name"></td>
-			<td><input class="form-control" ng-model="contact.email"></td>
 			<td><input class="form-control" ng-model="contact.number"></td>
+			<td><input class="form-control" ng-model="contact.email"></td>
 			<td><input class="form-control" ng-model="contact.bday"></td>
 			<td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
 			<td><button class="btn btn-info" ng-click="update(contact._id)">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
@@ -36,8 +37,8 @@
 
 		<tr ng-repeat="contact in contactList">
 			<td>{{ contact.name }}</td>
-			<td>{{ contact.email }}</td>
-		 	<td>{{ contact.number }}</td>
+			<td>{{ contact.number }}</td>
+		 	<td>{{ contact.email }}</td>
 		 	<td>{{ contact.bday }}</td>
 			<td><button class="btn btn-danger" ng-click="remove(contact._id)">Remove</button></td>
 			<td><button class="btn btn-warning" ng-click="edit(contact._id)">Edit</button></td>
