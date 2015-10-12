@@ -1,0 +1,38 @@
+WHAT IS NODE.JS
+
+Node.js is a runtime environment and library for running JS applications outside the browser.
+Node.js is mostly used to run real-time server applications and shines through its performance using non-blocking I/o and asynchronous events.
+
+o> Javascript on the server
+o> Uses V8 engine, like the Chrome browser
+o> Program just like the client
+
+JS
+-> Event-driven - node can track a variety of events happening on the server
+-> Non-blocking
+-> Two-connections
+-> Real time applications - can handle multiple apps simultaneously
+
+Challenges
+
+-Doesn't run on traditional servers
+-Can use Heroku for node.js app deployment
+-Lots of dev installs
+-very concise API - need to add lot of external libraries
+-
+
+
+
+
+WHAT IS A M.E.A.N WEB APPLICATION?
+-> M: MongoDB - A NoSQL database powered by JavaScript
+-> E: ExpressJS - A Node.s application framework
+-> A: AngularJS - A front-end javascript application framework
+-> N: Node.js - A server-side javascript application engine
+
+CRUD capabilities - Create, Read, Update Delete
+
+
+
+
+
